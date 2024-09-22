@@ -89,11 +89,19 @@ body {
   /*color: #4286f4;*/
 }
 
-.publication-video {
-    position: relative;
-    width: 20cm;
-    height: 20cm;
-    padding-bottom: 10.25%;
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the image and text horizontally */
+  justify-content: center;
+}
+
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the image and text horizontally */
+  justify-content: center;
 }
 
 .publication-video iframe {
