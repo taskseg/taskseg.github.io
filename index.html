@@ -9,7 +9,7 @@
   <title>TaskSeg: Unsupervised Deep Instruction Tuning for Few Shot Object Segmentation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -42,6 +42,7 @@
 </head>
 <body>
 
+<!--
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -81,7 +82,7 @@
 
   </div>
 </nav>
-
+-->
 
 <section class="hero">
   <div class="hero-body">
@@ -89,19 +90,22 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">TaskSeg: Unsupervised Deep Instruction Tuning for Few Shot Object Segmentation</h1>
+          
+          <h3 class="title is-4 conference-authors">ICRA 2025</h3>
+
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Jessica Brown*</a><sup>1</sup>,</span>
+              <a href="">Jessica Brown*</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Teeratham Vitchutripop*</a><sup>2</sup>,</span>
+              <a href="https://tjvitchutripop.github.io/">Teeratham Vitchutripop*</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://jonbarron.info">Eric Cai</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Jenny Wang</a><sup>3</sup>,
+              <a href="https://himty.github.io/">Jenny Wang</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">David Held</a><sup>3</sup>,
+              <a href="https://davheld.github.io/">David Held</a><sup>3</sup>
             </span>
           </div>
 
@@ -110,59 +114,69 @@
             <span class="author-block"><sup>2</sup>Yale University</span>
             <span class="author-block"><sup>3</sup>Carnegie Mellon University</span>
           </div>
-<!--  -->
-<!-- <!--           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
 
-<!--               </span>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link.
               <span class="link-block">
-<!--                 <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>-->
+              <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (Coming Soon!)</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-<!--               <span class="link-block"> -->
-<!--                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA" -->
-<!--                    class="external-link button is-normal is-rounded is-dark"> -->
-<!--                   <span class="icon"> -->
-<!--                       <i class="fab fa-youtube"></i> --> -->
-<!--                   </span> -->
-<!--                   <span>Video</span> --> -->
-<!--                 </a> -->
-<!--               </span> -->
+              <!-- Video Link.
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
               <!-- Code Link. -->
-<!--               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+              <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon!)</span>
                   </a>
               </span>
-<!--               <!-- Dataset Link. -->
-<!--               <span class="link-block">
+              <!-- Dataset Link.
+              <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span> -->
-<!--                   </a> -->
-<!--             </div> -->
+                  <span>Data</span>
+                  </a>
+              </span>-->
+            </div>
 
-<!--               </d/iv> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </section> --> --> --> --> -->
-<!--  -->
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -173,6 +187,10 @@
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">TaskSeg</span> enables unsupervised novel object segmentation for downstream robotic manipulation policies.
       </h2>
+      <video id="teaser" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/summary_vid.mp4"
+                type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -184,148 +202,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <div class="
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:04
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:04
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:04
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:04
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:04
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-￼
-0:00
-/ 0:03
-￼
-￼
-￼
-￼
-content has-text-justified">
+        <div class="content has-text-justified">
           <p>
              Instance segmentation is crucial for many manipulation policies that rely on object-centric reasoning (e.g.
 modeling an object’s pose or geometry). The appropriate
@@ -405,31 +282,6 @@ in the real world.
         <h2 class="title is-3">Visualizations</h2>
     </div>
     <!--/ Matting. -->
-ati. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Work</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
     <!--/ Concurrent Work. -->
 
   </div>
@@ -462,18 +314,9 @@ ati. -->
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-centered">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
