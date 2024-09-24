@@ -92,6 +92,8 @@ body {
 .conference-authors {
   color: hsl(0, 0%, 16%) !important;
   font-family: 'Google Sans', sans-serif;
+  /* italics */
+  font-style: italic;
 }
 
 .content-container {
@@ -101,7 +103,6 @@ body {
   justify-content: center;
 }
 
-}
 .content-container {
   display: flex;
   flex-direction: column;

@@ -227,6 +227,16 @@ high-quality segmentations both on a suite of manipulation
 tasks in simulation and on human demonstrations collected
 in the real world. 
           </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
           <video id="teaser" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/summary_vid.mp4"
                     type="video/mp4">
@@ -234,57 +244,70 @@ in the real world.
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
 
 <section class="section">
-  <div class="content-container has-text-centered">
-    <h2 class="title is-3">Motivation</h2>
-    <span class="dnerf"></span> Some object instances may be out of distribution for Grounded SAM.
-    <div class="content-container">
-      <img src="./static/images/dust.png" alt="Description of Image" style="width: 20cm; height: 20cm;" />
+  <div class="container is-max-desktop">
+    <div class="content-container has-text-centered">
+      <h2 class="title is-3">Motivation</h2>
+      <div class="content-container">
+        <img src="./static/images/e2.png" alt="Description of Image" />
+      </div>
+      Off-the-shelf foundation models can perform poorly on out-of-distribution object instances, and cannot 
+      reliably adapt to the semantic ambiguity of task-specific segmentation. Manually training task-specific 
+      segmentation models, on the other hand, is infeasible due to the lack of annotated data.
     </div>
   </div>
 </section>
 
-
 <section class="section">
-  <div class="content-container has-text-centered">
-    <div class="content-container">
-      <img src="./static/images/e2.png" alt="Description of Image" style="width: 20cm; height: 15cm;" />
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview: Task-Specific Finetuning</h2>
+        <div class="content-container">
+          <img src="./static/images/dit_sam.png" alt="Description of Image" />
+        </div>
+        To address this issue, we propose TaskSeg, a novel method for the unsupervised extraction of pseudo-ground-truth segmentations from unlabeled 
+        video demonstrations. With TaskSeg, we can finetune SAM through Deep Instruction Tuning for few-shot object segmentation in arbitrary 
+        manipulation task settings, without the need for annotated data.
+      </div>
     </div>
-  </div>
 </section>
 
-<span class="dnerf"></span>What can you do in that case? 
-<span class="dnerf"></span> You can use TaskSeg + DIT SAM to fine tune Segment Anything to work on objects that would otherwise be out of distribution for it. 
-
-    
-    <div class="column is-one-fifth"></div> <!-- Empty column for spacing -->
-  </div>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview: TaskSeg Data Generation</h2>
+        <div class="content-container">
+          <img src="./static/images/taskseg_data.png" alt="Description of Image" />
+        </div>
+        Our method, TaskSeg, uses optical flow to extact segmentations from video demonstrations. Since the action object will typically undergo the most 
+        motion in a manipulation demonstration, TaskSeg is able to reliably extract high-quality object masks in an arbitrary manipulation setting - moreover, 
+        these videos are often already available as a pre-requisite when training manipulation policies. 
+      </div>
+    </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Process Diagram</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Real World Generalization</h2>
+        <div class="content-container">
+          <video id="teaser" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/method_results.mp4"
+                    type="video/mp4">
+          </video>
         </div>
+        Using TaskSeg, we are able to perform few-shot object segmentation in the real world, including out-of-distribution objects (i.e. "trailer tie plate"), 
+        and across novel and cluttered environments.
       </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Visualizations</h2>
     </div>
-    <!--/ Matting. -->
-    <!--/ Concurrent Work. -->
-
-  </div>
 </section>
 
 <!-- 
